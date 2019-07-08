@@ -1,0 +1,22 @@
+{
+  "name": "ts-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "upload": "cross-env-shell \"npm run build && tfx build tasks upload --task-path . --overwrite true --service-url https://dev.azure.com/Mastaq-dev --token $VSTS_TOKEN\"",
+    "check": "cross-env-shell \" echo $VSTS_TOKEN \""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.6.1",
+    "@types/q": "^1.5.2",
+    "cross-env": "^5.2.0",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.8.0"
+  }
+}
