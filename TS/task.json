@@ -4,22 +4,15 @@
   "friendlyName": "Hello World task with TypeScript",
   "description": "Outputs nodejs version",
   "author": "Sergei",
-  "category": "Utility",
-  "visibility": [
-    "Build",
-    "Release"
-  ],
-  "demands": [],
   "version": {
-    "Major": "0",
-    "Minor": "1",
-    "Patch": "2"
+    "Major": 1,
+    "Minor": 1,
+    "Patch": 11
   },
-  "minimumAgentVersion": "1.95.0",
-  "instanceNameFormat": "HelloWorldTSTask $(message)",
+  "instanceNameFormat": "Hello World My TS Task",
   "execution": {
-    "Node10": {
-      "target": "index.js"
+    "PowerShell3": {
+      "target": "Script.ps1"
     }
   }
 }
