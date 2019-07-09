@@ -2,12 +2,12 @@
   "id": "c125c9b0-a1c1-11e9-8e3a-ad794380b0a1",
   "name": "HelloWorldTSTask",
   "friendlyName": "Hello World task with TypeScript",
-  "description": "Outputs nodejs version",
+  "description": "Outputs some extremely important information",
   "author": "Sergei",
   "version": {
     "Major": 1,
     "Minor": 1,
-    "Patch": 12
+    "Patch": 13
   },
   "instanceNameFormat": "Hello World My TS Task",
   "execution": {
