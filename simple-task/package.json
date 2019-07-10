@@ -15,9 +15,7 @@
     "@types/node": "^12.6.1",
     "@types/q": "^1.5.2",
     "cross-env": "^5.2.0",
-    "gulp": "^4.0.2",
     "gulp-json-editor": "^2.5.2",
-    "gulp-shell": "^0.7.1",
     "typescript": "^3.5.2"
   },
   "dependencies": {
