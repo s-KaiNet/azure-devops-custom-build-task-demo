@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "author": "Sergei Sergeev",
     "id": "simple-task-extension",
-    "version": "0.0.3",
+    "version": "0.0.9",
     "name": "Simple task packaged with extension",
     "publisher": "s-kainet",
     "public": false,

@@ -1,0 +1,1 @@
+tfx extension publish --rev-version --manifests vss-extension.json --share-with Mastaq-dev
