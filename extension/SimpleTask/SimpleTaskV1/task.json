@@ -1,0 +1,38 @@
+{
+  "id": "80bcf0b4-5b2a-4357-928c-3cc9cfdeb9b6",
+  "name": "TaskFromExtension",
+  "friendlyName": "Custom simple task from extension",
+  "description": "Outputs some extremely important information",
+  "author": "Sergei",
+  "version": {
+    "Major": 1,
+    "Minor": 1,
+    "Patch": 20
+  },
+  "instanceNameFormat": "Hello World My TS Task",
+  "groups": [{
+    "name": "settings",
+    "displayName": "Settings",
+    "isExpanded": true
+  }],
+  "inputs": [{
+    "type": "boolean",
+    "label": "Is Message enabled",
+    "name": "enabled",
+    "groupName": "settings"
+  }, {
+    "type": "string",
+    "label": "Message",
+    "name": "message",
+    "visibleRule": "enabled == true",
+    "groupName": "settings"
+  }],
+  "execution": {
+    "Node10": {
+      "target": "index.js"
+    },
+    "PowerShell3": {
+      "target": "Script.ps1"
+    }
+  }
+}
