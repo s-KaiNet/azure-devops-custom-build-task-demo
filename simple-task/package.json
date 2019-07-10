@@ -4,10 +4,9 @@
   "description": "",
   "main": "sample.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json && gulp task-version",
+    "build": "tsc -p tsconfig.json",
     "upload-local": "cross-env-shell \"npm run build && tfx build tasks upload --task-path . --overwrite true --service-url https://dev.azure.com/Mastaq-dev --token $VSTS_TOKEN\"",
-    "check": "cross-env-shell \" echo $VSTS_TOKEN \"",
-    "upload": "npm run build && gulp upload"
+    "check": "cross-env-shell \" echo $VSTS_TOKEN \""
   },
   "author": "",
   "license": "ISC",
