@@ -7,9 +7,26 @@
   "version": {
     "Major": 1,
     "Minor": 1,
-    "Patch": 13
+    "Patch": 20
   },
   "instanceNameFormat": "Hello World My TS Task",
+  "groups": [{
+    "name": "settings",
+    "displayName": "Settings",
+    "isExpanded": true
+  }],
+  "inputs": [{
+    "type": "boolean",
+    "label": "Is Message enabled",
+    "name": "enabled",
+    "groupName": "settings"
+  }, {
+    "type": "string",
+    "label": "Message",
+    "name": "message",
+    "visibleRule": "enabled == true",
+    "groupName": "settings"
+  }],
   "execution": {
     "Node10": {
       "target": "index.js"
